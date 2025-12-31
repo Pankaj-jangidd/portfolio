@@ -162,7 +162,7 @@ span.type-animation-cursor::after {
 
   /* Push hero content below navbar on mobile */
   #hero {
-    padding-top: 10rem !important;
+    padding-top: 12rem !important;
     min-height: auto !important;
     padding-bottom: 2rem !important;
   }
