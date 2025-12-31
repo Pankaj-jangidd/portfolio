@@ -78,12 +78,6 @@ function Projects() {
             <Link
               to="/projects"
               replace
-              onClick={() =>
-                sessionStorage.setItem(
-                  "projectsScrollPos",
-                  window.scrollY.toString()
-                )
-              }
               className="inline-flex items-center gap-3 border-2 border-accent text-accent px-8 py-3 rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300 group"
             >
               View More Projects
@@ -113,12 +107,6 @@ function Projects() {
             <Link
               to="/projects"
               replace
-              onClick={() =>
-                sessionStorage.setItem(
-                  "projectsScrollPos",
-                  window.scrollY.toString()
-                )
-              }
               className="inline-flex items-center gap-3 border-2 border-accent text-accent px-8 py-3 rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300 group"
             >
               View More Projects

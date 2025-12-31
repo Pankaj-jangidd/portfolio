@@ -23,17 +23,9 @@ function AllProjectsPage() {
     }
   }, []);
 
-  // Handle back button click - restore scroll position
+  // Handle back button click - just navigate to home
   const handleBack = () => {
-    const savedScrollPos = sessionStorage.getItem("projectsScrollPos");
     navigate("/", { replace: true });
-    if (savedScrollPos) {
-      // Wait for page to fully render before restoring scroll
-      setTimeout(() => {
-        window.scrollTo({ top: parseInt(savedScrollPos), behavior: "instant" });
-        sessionStorage.removeItem("projectsScrollPos");
-      }, 150);
-    }
   };
 
   return (
