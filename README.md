@@ -1,16 +1,42 @@
-# React + Vite
+# Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio showcasing my projects and skills with smooth animations and elegant design.
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [Coming Soon]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Responsive Design** - Looks great on all devices from mobile to desktop
+- **Smooth Animations** - Framer Motion powered animations for a polished feel
+- **Dark Theme** - Sleek cyan accent on dark background
+- **Section Navigation** - Smooth scroll between About, Skills, Projects, and Contact
+- **All Projects Page** - Dedicated page to showcase all projects with filtering
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+| Frontend     | Styling       | Animation     |
+| ------------ | ------------- | ------------- |
+| React 18     | Tailwind CSS  | Framer Motion |
+| Vite         | Custom Design | React Icons   |
+| React Router |               |               |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📸 Sections
+
+- **Hero** - Eye-catching introduction with animated typing effect
+- **About** - Personal background and experience
+- **Skills** - Technical skills organized by category
+- **Projects** - Featured work with live demos and source code
+- **Contact** - Get in touch form and social links
+
+## 🚀 Quick Start
+
+```bash
+git clone https://github.com/Pankaj-jangidd/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+
+## 👤 Author
+
+[Pankaj Kumar](https://github.com/Pankaj-jangidd)
