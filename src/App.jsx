@@ -74,6 +74,18 @@ function App() {
       document.body.style.transition = "none";
       document.documentElement.style.scrollBehavior = "auto";
 
+      // If returning to home and we have a saved projects scroll pos
+      const savedProjectsPos = sessionStorage.getItem("projectsScrollPos");
+      if (window.location.pathname === "/" && savedProjectsPos) {
+        setTimeout(() => {
+          window.scrollTo({
+            top: parseInt(savedProjectsPos),
+            behavior: "instant",
+          });
+          sessionStorage.removeItem("projectsScrollPos");
+        }, 50);
+      }
+
       setTimeout(() => {
         // Re-enable smooth scroll and fade in
         document.documentElement.style.scrollBehavior = "smooth";

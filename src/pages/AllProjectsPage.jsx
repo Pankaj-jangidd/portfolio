@@ -23,9 +23,31 @@ function AllProjectsPage() {
     }
   }, []);
 
-  // Handle back button click - go to home
+  // Handle back button click - go to home with scroll restoration
   const handleBack = () => {
-    navigate("/");
+    const savedProjectsPos = sessionStorage.getItem("projectsScrollPos");
+
+    if (savedProjectsPos) {
+      document.body.style.opacity = "0";
+      document.body.style.transition = "none";
+      document.documentElement.style.scrollBehavior = "auto";
+
+      navigate("/");
+
+      setTimeout(() => {
+        window.scrollTo({
+          top: parseInt(savedProjectsPos),
+          behavior: "instant",
+        });
+        sessionStorage.removeItem("projectsScrollPos");
+
+        document.documentElement.style.scrollBehavior = "smooth";
+        document.body.style.transition = "opacity 0.3s ease";
+        document.body.style.opacity = "1";
+      }, 100);
+    } else {
+      navigate("/");
+    }
   };
 
   return (
