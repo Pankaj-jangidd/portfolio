@@ -83,9 +83,14 @@ function Projects() {
                   window.scrollY.toString()
                 )
               }
-              className="inline-flex items-center gap-3 border-2 border-accent text-accent px-8 py-3 rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300 group"
+              className="inline-flex items-center gap-3 bg-[#06B6D4] text-white font-semibold text-sm uppercase px-8 py-3 rounded-full hover:bg-[#0891b2] transition-all duration-300 group"
+              style={{
+                fontFamily: "Oxanium, sans-serif",
+                boxShadow:
+                  "0 0 20px rgba(6, 182, 212, 0.5), 0 0 40px rgba(6, 182, 212, 0.3), 0 0 60px rgba(6, 182, 212, 0.15)",
+              }}
             >
-              View More Projects
+              VIEW MORE PROJECTS
               <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
             </Link>
           </AnimatedSection>
@@ -117,9 +122,14 @@ function Projects() {
                   window.scrollY.toString()
                 )
               }
-              className="inline-flex items-center gap-3 border-2 border-accent text-accent px-8 py-3 rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300 group"
+              className="inline-flex items-center gap-3 bg-[#06B6D4] text-white font-semibold text-sm uppercase px-8 py-3 rounded-full hover:bg-[#0891b2] transition-all duration-300 group"
+              style={{
+                fontFamily: "Oxanium, sans-serif",
+                boxShadow:
+                  "0 0 20px rgba(6, 182, 212, 0.5), 0 0 40px rgba(6, 182, 212, 0.3), 0 0 60px rgba(6, 182, 212, 0.15)",
+              }}
             >
-              View More Projects
+              VIEW MORE PROJECTS
               <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
             </Link>
           </AnimatedSection>
