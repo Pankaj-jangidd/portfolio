@@ -147,7 +147,7 @@ function Contact() {
           </AnimatedSection>
 
           {/* Mobile: Individual card animations with alternating directions */}
-          <div className="lg:hidden w-full flex flex-col gap-4">
+          <div className="lg:hidden w-full flex flex-col gap-4 contact-cards-mobile">
             {contacts.map((contact, index) => (
               <AnimatedSection
                 key={index}
@@ -158,7 +158,7 @@ function Contact() {
                   href={contact.link}
                   target={contact.external ? "_blank" : undefined}
                   rel={contact.external ? "noopener noreferrer" : undefined}
-                  className="flex items-center gap-4 p-5 rounded-xl bg-darkCard border border-darkBorder hover:border-accent/50 transition-all duration-300 group hover:-translate-y-1"
+                  className="flex items-center gap-4 p-5 rounded-xl bg-darkCard border border-darkBorder hover:border-accent/50 transition-all duration-300 group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                     <contact.icon

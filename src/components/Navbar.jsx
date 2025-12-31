@@ -185,16 +185,16 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-darkBg border-t border-darkBorder">
-          <div className="px-8 py-4 flex flex-col gap-4">
+        <div className="md:hidden mobile-menu-container">
+          <div className="px-8 py-6 flex flex-col gap-5">
             {navLinks.map((link) => (
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.id)}
-                className={`text-left transition-colors py-2 border-l-2 pl-3 ${
+                className={`text-left transition-all duration-300 py-2 border-l-2 pl-4 ${
                   activeSection === link.id
-                    ? "text-accent font-medium border-accent"
-                    : "text-textGray hover:text-textWhite border-transparent"
+                    ? "text-accent font-medium border-accent bg-accent/5"
+                    : "text-textGray hover:text-textWhite border-transparent hover:pl-6"
                 }`}
               >
                 {link.name}

@@ -143,16 +143,18 @@ span.type-animation-cursor::after {
   h1.hero-name-mobile {
     white-space: normal !important;
     word-spacing: 100vw;
-    font-size: 5.5rem !important;
+    font-size: clamp(3.5rem, 15vw, 5.5rem) !important;
     transform: scaleX(1.15) !important;
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
+    padding-top: 140px !important; /* Keep the manual fix */
   }
 
   /* Hero subtitle - fit on one line */
   .hero-subtitle {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
     white-space: nowrap !important;
+    letter-spacing: 0.05em;
   }
 
   /* About section - photo first on mobile */
@@ -160,50 +162,57 @@ span.type-animation-cursor::after {
     flex-direction: column-reverse !important;
   }
 
-  /* Reduce scroll margin and padding on mobile for all sections */
+  /* Reduce photo size on mobile */
+  #about img {
+    width: 12rem !important;
+    height: 12rem !important;
+  }
+
+  /* Reduce scroll margin and padding on mobile */
   section#about,
   section#skills,
   section#projects,
   section#contact {
-    scroll-margin-top: 3rem !important;
-    padding-top: 2rem !important;
+    scroll-margin-top: 4rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
   }
 
   /* Push hero content below navbar on mobile */
   #hero {
-    padding-top: 8rem !important;
+    padding-top: 9rem !important;
     min-height: auto !important;
-    padding-bottom: 2rem !important;
+    padding-bottom: 3rem !important;
   }
 
-  /* Extra top padding for hero name on mobile */
-  h1.hero-name-mobile {
-    padding-top: 140px !important;
-  }
-
-  /* Contact section - smaller "LET'S WORK TOGETHER" heading */
+  /* Contact section - centered alignment */
   #contact h2.contact-heading {
-    font-size: 2.5rem !important;
+    font-size: clamp(2.5rem, 12vw, 4rem) !important;
     line-height: 1.1 !important;
+    text-align: center !important;
+    width: 100%;
   }
 
-  /* Better horizontal padding on mobile sections */
-  .mobile-padding {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+  #contact .contact-cards-mobile {
+    margin-top: 2rem !important;
   }
 
   /* Smaller skill category headings on mobile */
   .skill-category-heading {
-    font-size: 1.75rem !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
-  /* Navbar mobile fixes */
+  /* Navbar mobile refinements */
   nav .navbar-container {
-    padding: 1rem !important;
+    padding: 1rem 1.5rem !important;
   }
 
-  nav .navbar-logo {
-    font-size: 1.25rem !important;
+  /* Mobile menu dropdown blur and border */
+  .mobile-menu-container {
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
 }
