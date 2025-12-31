@@ -45,6 +45,23 @@ function HomePage() {
 }
 
 function App() {
+  // Handle browser back/forward navigation - prevent scroll animation
+  useEffect(() => {
+    const handlePopState = () => {
+      // Hide page, let browser restore scroll, then fade in
+      document.body.style.opacity = "0";
+      document.body.style.transition = "none";
+
+      setTimeout(() => {
+        document.body.style.transition = "opacity 0.3s ease";
+        document.body.style.opacity = "1";
+      }, 100);
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
   // Restore scroll position after reload (runs after React mounts)
   useEffect(() => {
     const savedScrollPos = sessionStorage.getItem("scrollPosBeforeReload");
