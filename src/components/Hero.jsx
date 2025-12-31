@@ -189,7 +189,7 @@ function Hero() {
               <div className="animate-float">
                 <img
                   src="/illustrator.svg"
-                  alt="Developer working at desk illustration"
+                  alt="devpankaj - Software Developer Illustration"
                   className="w-full h-auto"
                 />
               </div>

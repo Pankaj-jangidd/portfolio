@@ -95,7 +95,7 @@ function About() {
             <div className="relative">
               <img
                 src="/pankaj-photo.jpg"
-                alt="Pankaj Kumar"
+                alt="devpankaj | Pankaj Kumar - Software Developer"
                 className="w-64 h-64 object-cover object-top rounded-full border-2 border-darkBorder shadow-xl"
               />
               {/* Floating Elements */}

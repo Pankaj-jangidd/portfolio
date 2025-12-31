@@ -172,7 +172,7 @@ function ProjectCard({ project, onPrivateClick }) {
       <div className="relative h-48 overflow-hidden">
         <img
           src={project.image}
-          alt={project.name}
+          alt={`${project.name} - devpankaj Project`}
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
           loading="lazy"
         />
