@@ -104,9 +104,10 @@ function Navbar() {
   const scrollToSection = (id) => {
     setIsMenuOpen(false);
 
-    // If not on home page, navigate to home with hash (replace history)
+    // If not on home page, navigate to home and save section to scroll to
     if (location.pathname !== "/") {
-      navigate(`/#${id}`, { replace: true });
+      sessionStorage.setItem("scrollToSection", id);
+      navigate("/", { replace: true });
       return;
     }
 

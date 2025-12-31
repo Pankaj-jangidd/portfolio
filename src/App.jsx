@@ -12,6 +12,27 @@ import AllProjectsPage from "./pages/AllProjectsPage";
 function HomePage() {
   const location = useLocation();
 
+  // Handle navigation from navbar (scrollToSection in sessionStorage)
+  useEffect(() => {
+    const sectionToScroll = sessionStorage.getItem("scrollToSection");
+    if (sectionToScroll) {
+      sessionStorage.removeItem("scrollToSection");
+      const element = document.getElementById(sectionToScroll);
+      if (element) {
+        // Hide page, scroll instantly, then fade in
+        document.body.style.opacity = "0";
+
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "instant" });
+
+          // Fade in smoothly
+          document.body.style.transition = "opacity 0.3s ease";
+          document.body.style.opacity = "1";
+        }, 50);
+      }
+    }
+  }, []);
+
   // Handle hash-based navigation (e.g., /#about) - no visible scrolling
   useEffect(() => {
     if (location.hash) {
