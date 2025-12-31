@@ -107,7 +107,7 @@ function Navbar() {
     // If not on home page, navigate to home and save section to scroll to
     if (location.pathname !== "/") {
       sessionStorage.setItem("scrollToSection", id);
-      navigate("/", { replace: true });
+      navigate("/");
       return;
     }
 

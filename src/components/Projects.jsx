@@ -77,7 +77,6 @@ function Projects() {
           <AnimatedSection className="text-center" delay={0.3}>
             <Link
               to="/projects"
-              replace
               className="inline-flex items-center gap-3 border-2 border-accent text-accent px-8 py-3 rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300 group"
             >
               View More Projects
@@ -106,7 +105,6 @@ function Projects() {
           <AnimatedSection className="text-center" delay={0.3}>
             <Link
               to="/projects"
-              replace
               className="inline-flex items-center gap-3 border-2 border-accent text-accent px-8 py-3 rounded-full font-medium hover:bg-accent hover:text-white transition-all duration-300 group"
             >
               View More Projects

@@ -23,9 +23,9 @@ function AllProjectsPage() {
     }
   }, []);
 
-  // Handle back button click - just navigate to home
+  // Handle back button click - go to home
   const handleBack = () => {
-    navigate("/", { replace: true });
+    navigate("/");
   };
 
   return (
