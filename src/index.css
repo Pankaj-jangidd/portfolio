@@ -169,7 +169,7 @@ span.type-animation-cursor::after {
 
   /* Extra top padding for hero name on mobile */
   h1.hero-name-mobile {
-    padding-top: 100px !important;
+    padding-top: 120px !important;
   }
 
   /* Contact section - smaller "LET'S WORK TOGETHER" heading */
