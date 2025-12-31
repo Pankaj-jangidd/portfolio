@@ -51,7 +51,7 @@ function Projects() {
 
   return (
     <section id="projects" className="bg-darkBg py-20">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-8">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-textWhite mb-2">

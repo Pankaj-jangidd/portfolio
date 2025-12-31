@@ -55,7 +55,7 @@ function AllProjectsPage() {
       <Navbar />
 
       <section className="py-12 pt-24">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-8">
           {/* Section Header with Back Button on same line */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

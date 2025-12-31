@@ -126,7 +126,7 @@ function Navbar() {
 
   return (
     <nav className="fixed w-full top-0 z-[100] bg-darkBg/95 backdrop-blur-md">
-      <div className="navbar-container max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+      <div className="navbar-container max-w-7xl 2xl:max-w-[1440px] mx-auto px-8 py-6 flex justify-between items-center">
         {/* Logo */}
         <button
           onClick={() => scrollToSection("hero")}

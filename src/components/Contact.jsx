@@ -86,7 +86,7 @@ function Contact() {
       {/* Geometric Background */}
       <GeometricBackground />
 
-      <div className="max-w-7xl mx-auto px-8 w-full relative z-50">
+      <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-8 relative z-50">
         {/* Section Header */}
         <AnimatedSection className="text-center mb-16" direction="up">
           <h2 className="text-4xl sm:text-5xl font-bold text-textWhite mb-2">

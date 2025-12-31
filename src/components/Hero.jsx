@@ -65,12 +65,12 @@ function Hero() {
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-8 md:px-12 w-full relative z-50">
+      <div className="max-w-7xl 2xl:max-w-[1440px] mx-auto px-8 md:px-12 w-full relative z-50">
         {/* ===== TOP SECTION - CENTERED NAME AND SUBTITLE ===== */}
         <div className="w-full flex flex-col items-center mb-8 lg:mb-10">
           {/* Main Name - Centered */}
           <motion.h1
-            className="hero-name-mobile text-7xl sm:text-8xl md:text-9xl lg:text-[11rem] xl:text-[13rem] font-normal text-white tracking-tight leading-[0.85] mb-3 whitespace-nowrap text-center w-full"
+            className="hero-name-mobile text-7xl sm:text-8xl md:text-9xl lg:text-[11rem] xl:text-[13rem] 2xl:text-[15rem] font-normal text-white tracking-tight leading-[0.85] mb-3 whitespace-nowrap text-center w-full"
             style={{
               letterSpacing: "0.005em",
               fontFamily: "'Passion One', sans-serif",
