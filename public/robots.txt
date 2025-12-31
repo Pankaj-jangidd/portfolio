@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pankaj-kumar.vercel.app/sitemap.xml
+Sitemap: https://devpankaj.vercel.app/sitemap.xml
