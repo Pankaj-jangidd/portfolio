@@ -131,14 +131,14 @@ function Contact() {
                   rel={contact.external ? "noopener noreferrer" : undefined}
                   className="flex items-center gap-4 p-5 rounded-xl bg-darkCard border border-darkBorder hover:border-accent/50 transition-all duration-300 group hover:-translate-y-1"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
                     <contact.icon
                       className={`text-accent text-xl ${
                         contact.label === "Phone" ? "scale-x-[-1]" : ""
                       }`}
                     />
                   </div>
-                  <span className="text-textGray text-base group-hover:text-textWhite transition-colors">
+                  <span className="text-textGray text-base group-hover:text-textWhite transition-colors break-all md:break-normal">
                     {contact.text}
                   </span>
                 </a>
@@ -160,14 +160,14 @@ function Contact() {
                   rel={contact.external ? "noopener noreferrer" : undefined}
                   className="flex items-center gap-4 p-5 rounded-xl bg-darkCard border border-darkBorder hover:border-accent/50 transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
                     <contact.icon
                       className={`text-accent text-xl ${
                         contact.label === "Phone" ? "scale-x-[-1]" : ""
                       }`}
                     />
                   </div>
-                  <span className="text-textGray text-base group-hover:text-textWhite transition-colors">
+                  <span className="text-textGray text-base group-hover:text-textWhite transition-colors break-all">
                     {contact.text}
                   </span>
                 </a>
