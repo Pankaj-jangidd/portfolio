@@ -2,7 +2,9 @@
 
 A modern, responsive developer portfolio showcasing my projects and skills with smooth animations and elegant design.
 
-🔗 **Live Demo**: [Coming Soon]
+![Portfolio Preview](./public/preview.png)
+
+🔗 **Live Demo**: [devpankaj.vercel.app](https://devpankaj.vercel.app)
 
 ## ✨ Features
 
