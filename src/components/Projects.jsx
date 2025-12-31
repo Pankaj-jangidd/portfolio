@@ -184,7 +184,7 @@ function ProjectCard({ project, onPrivateClick }) {
         <h3 className="text-textWhite font-semibold text-lg mb-2">
           {project.name}
         </h3>
-        <p className="text-textGray text-sm mb-4 leading-relaxed line-clamp-3">
+        <p className="text-textGray text-sm mb-4 leading-relaxed">
           {project.description}
         </p>
 
