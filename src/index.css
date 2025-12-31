@@ -45,6 +45,15 @@ button {
   transition: all 0.3s ease;
 }
 
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Animation keyframes */
 @keyframes fadeInUp {
   from {

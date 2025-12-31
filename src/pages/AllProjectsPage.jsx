@@ -144,11 +144,11 @@ function ProjectCard({ project, onPrivateClick }) {
         </p>
 
         {/* Tech Stack */}
-        <div className="flex flex-wrap gap-1.5 mb-4">
+        <div className="flex flex-nowrap gap-1.5 mb-4 overflow-x-auto pb-1 scrollbar-hide">
           {project.techStack.map((tech, index) => (
             <span
               key={index}
-              className="text-xs px-1.5 py-0.5 bg-darkBg text-textGray rounded-md border border-darkBorder"
+              className="text-xs px-1.5 py-0.5 bg-darkBg text-textGray rounded-md border border-darkBorder whitespace-nowrap flex-shrink-0"
             >
               {tech}
             </span>
