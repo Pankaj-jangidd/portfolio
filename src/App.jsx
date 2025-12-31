@@ -69,14 +69,17 @@ function App() {
   // Handle browser back/forward navigation - prevent scroll animation
   useEffect(() => {
     const handlePopState = () => {
-      // Hide page, let browser restore scroll, then fade in
+      // Hide page and disable smooth scroll
       document.body.style.opacity = "0";
       document.body.style.transition = "none";
+      document.documentElement.style.scrollBehavior = "auto";
 
       setTimeout(() => {
+        // Re-enable smooth scroll and fade in
+        document.documentElement.style.scrollBehavior = "smooth";
         document.body.style.transition = "opacity 0.3s ease";
         document.body.style.opacity = "1";
-      }, 100);
+      }, 150);
     };
 
     window.addEventListener("popstate", handlePopState);
