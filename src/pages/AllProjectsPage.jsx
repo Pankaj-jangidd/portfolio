@@ -26,7 +26,7 @@ function AllProjectsPage() {
   // Handle back button click - restore scroll position
   const handleBack = () => {
     const savedScrollPos = sessionStorage.getItem("projectsScrollPos");
-    navigate("/");
+    navigate("/", { replace: true });
     if (savedScrollPos) {
       // Wait for page to fully render before restoring scroll
       setTimeout(() => {

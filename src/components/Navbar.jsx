@@ -104,9 +104,9 @@ function Navbar() {
   const scrollToSection = (id) => {
     setIsMenuOpen(false);
 
-    // If not on home page, navigate to home with hash
+    // If not on home page, navigate to home with hash (replace history)
     if (location.pathname !== "/") {
-      navigate(`/#${id}`);
+      navigate(`/#${id}`, { replace: true });
       return;
     }
 
