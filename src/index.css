@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Oxanium", sans-serif;
+  font-size: 16px;
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #06b6d4;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0891b2;
+}
+
+/* Smooth transitions for all interactive elements */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Typewriter cursor styling */
+.type-animation-cursor {
+  color: #06b6d4;
+}
+
+/* Custom cursor for react-type-animation */
+span.type-animation-cursor::after {
+  content: "|";
+  color: #06b6d4;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Subtle radial gradient for hero background */
+.hero-gradient {
+  background: radial-gradient(
+    circle at 20% 50%,
+    rgba(6, 182, 212, 0.03) 0%,
+    transparent 50%
+  );
+}
+
+/* Name glow effect on hover */
+.name-glow:hover {
+  text-shadow: 0 0 30px rgba(6, 182, 212, 0.3);
+}
+
+/* Star twinkle animation */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Mobile hero name - wrap to 2 lines */
+@media (max-width: 639px) {
+  h1.hero-name-mobile {
+    white-space: normal !important;
+    word-spacing: 100vw;
+    font-size: 5.5rem !important;
+    transform: scaleX(1.15) !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  /* Hero subtitle - fit on one line */
+  .hero-subtitle {
+    font-size: 1rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* About section - photo first on mobile */
+  #about .about-content {
+    flex-direction: column-reverse !important;
+  }
+
+  /* Reduce scroll margin and padding on mobile for all sections */
+  section#about,
+  section#skills,
+  section#projects,
+  section#contact {
+    scroll-margin-top: 3rem !important;
+    padding-top: 2rem !important;
+  }
+
+  /* Push hero content below navbar on mobile */
+  #hero {
+    padding-top: 10rem !important;
+    min-height: auto !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Contact section - smaller "LET'S WORK TOGETHER" heading */
+  #contact h2.contact-heading {
+    font-size: 2.5rem !important;
+    line-height: 1.1 !important;
+  }
+
+  /* Better horizontal padding on mobile sections */
+  .mobile-padding {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Smaller skill category headings on mobile */
+  .skill-category-heading {
+    font-size: 1.75rem !important;
+  }
+
+  /* Navbar mobile fixes */
+  nav .navbar-container {
+    padding: 1rem !important;
+  }
+
+  nav .navbar-logo {
+    font-size: 1.25rem !important;
+  }
+}
