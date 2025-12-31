@@ -104,18 +104,20 @@ function App() {
     const savedPath = sessionStorage.getItem("reloadPath");
 
     if (savedScrollPos && savedPath === window.location.pathname) {
-      // Hide page, scroll instantly, then fade in
+      // Hide page and disable smooth scroll for instant jump
       document.body.style.opacity = "0";
+      document.documentElement.style.scrollBehavior = "auto";
 
       setTimeout(() => {
         window.scrollTo({ top: parseInt(savedScrollPos), behavior: "instant" });
         sessionStorage.removeItem("scrollPosBeforeReload");
         sessionStorage.removeItem("reloadPath");
 
-        // Fade in smoothly
+        // Re-enable smooth scroll and fade in
+        document.documentElement.style.scrollBehavior = "smooth";
         document.body.style.transition = "opacity 0.3s ease";
         document.body.style.opacity = "1";
-      }, 10);
+      }, 100); // Slightly more delay for full render
     }
   }, []);
 
