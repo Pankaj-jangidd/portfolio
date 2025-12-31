@@ -156,11 +156,11 @@ function ProjectCard({ project, onPrivateClick }) {
         </div>
 
         {/* Buttons */}
-        <div className="flex gap-3 mt-auto">
+        <div className="flex gap-2 mt-auto">
           {project.isPrivate ? (
             <button
               onClick={onPrivateClick}
-              className="flex-1 flex items-center justify-center gap-2 bg-darkBg text-textGray text-sm py-2.5 px-4 rounded-lg hover:bg-gray-800 hover:text-textWhite transition-colors"
+              className="flex-1 flex items-center justify-center gap-1.5 bg-darkBg text-textGray text-xs py-2.5 px-3 rounded-lg hover:bg-gray-800 hover:text-textWhite transition-colors whitespace-nowrap"
             >
               <FaLock className="text-xs" />
               Private
@@ -170,7 +170,7 @@ function ProjectCard({ project, onPrivateClick }) {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 bg-darkBg text-white text-sm py-2.5 px-4 rounded-lg hover:bg-gray-800 transition-colors"
+              className="flex-1 flex items-center justify-center gap-1.5 bg-darkBg text-white text-xs py-2.5 px-3 rounded-lg hover:bg-gray-800 transition-colors whitespace-nowrap"
             >
               <FaGithub />
               See Code
@@ -180,7 +180,7 @@ function ProjectCard({ project, onPrivateClick }) {
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 bg-accent text-white text-sm py-2.5 px-4 rounded-lg hover:bg-accentHover transition-colors"
+            className="flex-1 flex items-center justify-center gap-1.5 bg-accent text-white text-xs py-2.5 px-3 rounded-lg hover:bg-accentHover transition-colors whitespace-nowrap"
           >
             <FaExternalLinkAlt className="text-xs" />
             View Project
