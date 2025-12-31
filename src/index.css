@@ -162,9 +162,14 @@ span.type-animation-cursor::after {
 
   /* Push hero content below navbar on mobile */
   #hero {
-    padding-top: 12rem !important;
+    padding-top: 8rem !important;
     min-height: auto !important;
     padding-bottom: 2rem !important;
+  }
+
+  /* Extra top margin for hero name on mobile */
+  h1.hero-name-mobile {
+    margin-top: 2rem !important;
   }
 
   /* Contact section - smaller "LET'S WORK TOGETHER" heading */
