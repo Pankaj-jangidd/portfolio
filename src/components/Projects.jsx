@@ -77,6 +77,7 @@ function Projects() {
           <AnimatedSection className="text-center" delay={0.3}>
             <Link
               to="/projects"
+              replace
               onClick={() =>
                 sessionStorage.setItem(
                   "projectsScrollPos",
@@ -111,6 +112,7 @@ function Projects() {
           <AnimatedSection className="text-center" delay={0.3}>
             <Link
               to="/projects"
+              replace
               onClick={() =>
                 sessionStorage.setItem(
                   "projectsScrollPos",
