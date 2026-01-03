@@ -160,7 +160,7 @@ function Hero() {
 
             {/* Resume Button */}
             <motion.a
-              href="https://drive.google.com/file/d/10dPpJ0FoKjzDZzGsHdMVD11bGzMHgQBe/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XYlCvMpoI_gLI6yWBzyMnWutvj5yq4zs/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#06B6D4] text-white font-semibold text-sm uppercase px-8 py-3 rounded-full hover:bg-[#0891b2] transition-all duration-300 mt-2"
